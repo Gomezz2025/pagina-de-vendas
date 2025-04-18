@@ -1,94 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Big Wave Electric</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    nav { background: #0b3d91; padding: 1em; display: flex; justify-content: space-around; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://www.bigwaveelectric.com/images/hero.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
-    .hero h1 { font-size: 3em; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
-    .services, .testimonials { display: flex; flex-wrap: wrap; gap: 20px; }
-    .service, .testimonial { flex: 1 1 45%; background: #f4f4f4; padding: 20px; border-radius: 8px; }
-    .contact-form { display: flex; flex-direction: column; gap: 10px; }
-    .contact-form input, .contact-form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-    .contact-form button { padding: 10px; background: #0b3d91; color: white; border: none; border-radius: 4px; cursor: pointer; }
-    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px; border-radius: 50%; text-decoration: none; font-size: 24px; }
-    iframe { width: 100%; height: 300px; border: none; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.unsplash.com/photo-1581093588401-b6d09d4f8cbd') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    section {
+      padding: 60px 20px;
+      background-color: rgba(0,0,0,0.7);
+    }
+    .gallery img {
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #f39c12;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      padding: 10px 15px;
+      border-radius: 50%;
+    }
+    .whatsapp img {
+      width: 30px;
+    }
   </style>
 </head>
 <body>
 
+<header>
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">Sobre</a>
-    <a href="#services">Serviços</a>
-    <a href="#testimonials">Depoimentos</a>
-    <a href="#contact">Contato</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <section class="hero" id="home">
-    <h1>Big Wave Electric</h1>
-    <p>Serviços elétricos confiáveis para todas as suas necessidades residenciais e comerciais.</p>
-  </section>
+<div class="hero" id="home">
+  <h1>Big Wave Electric</h1>
+  <p>Soluções elétricas completas, onde você estiver. Profissionalismo e confiança nos EUA!</p>
+</div>
 
-  <section id="about">
-    <h2>Sobre Nós</h2>
-    <p>Com sede em Pompano Beach, FL, a Big Wave Electric oferece serviços elétricos de alta qualidade desde 2010. Nossa equipe é dedicada a fornecer soluções seguras e eficientes para nossos clientes.</p>
-  </section>
+<section id="about">
+  <h2>Sobre Nós</h2>
+  <p>Somos especialistas em instalações elétricas residenciais e comerciais. Com foco 100% presencial, nosso diferencial é o atendimento humano e dedicado, indo até onde o cliente estiver, sem enrolação.</p>
+</section>
 
-  <section id="services">
-    <h2>Serviços</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Instalações Elétricas</h3>
-        <p>Realizamos instalações elétricas completas para residências e empresas.</p>
-      </div>
-      <div class="service">
-        <h3>Iluminação de Piscinas</h3>
-        <p>Especialistas em iluminação subaquática para piscinas, criando ambientes deslumbrantes.</p>
-      </div>
-      <div class="service">
-        <h3>Manutenção e Reparos</h3>
-        <p>Serviços de manutenção preventiva e reparos elétricos rápidos e eficientes.</p>
-      </div>
-      <div class="service">
-        <h3>Projetos Personalizados</h3>
-        <p>Desenvolvimento de soluções elétricas sob medida para atender às suas necessidades específicas.</p>
-      </div>
-    </div>
-  </section>
+<section id="services">
+  <h2>Serviços Oferecidos</h2>
+  <ul>
+    <li>Instalação de luzes em piscinas</li>
+    <li>Reparos elétricos internos</li>
+    <li>Atualização de infraestrutura elétrica</li>
+    <li>Manutenção preventiva</li>
+  </ul>
+</section>
 
-  <section id="testimonials">
-    <h2>Depoimentos</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>"A Big Wave Electric transformou nossa área externa com uma iluminação incrível na piscina. Trabalho excepcional!"</p>
-        <p><strong>- Cliente Satisfeito</strong></p>
-      </div>
-      <div class="testimonial">
-        <p>"Profissionais confiáveis e serviço de alta qualidade. Recomendo fortemente!"</p>
-        <p><strong>- Cliente Feliz</strong></p>
-      </div>
-    </div>
-  </section>
+<section id="gallery" class="gallery">
+  <h2>Galeria</h2>
+  <img src="https://images.unsplash.com/photo-1581091215367-016ec3aa0b20" alt="Trabalho 1">
+  <img src="https://images.unsplash.com/photo-1581092787765-8c9a7f9edc82" alt="Trabalho 2">
+  <img src="https://images.unsplash.com/photo-1579435150392-140f08d45f9d" alt="Trabalho 3">
+</section>
 
-  <section id="contact">
-    <h2>Contato</h2>
-    <form class="contact-form" action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+<section id="testimonials">
+  <h2>Depoimentos</h2>
+  <blockquote>"Serviço impecável! Chegou no horário e resolveu tudo no mesmo dia." – John, Long Island</blockquote>
+  <blockquote>"Atendimento nota 10, recomendo demais." – Sarah, NY</blockquote>
+  <blockquote>"Honesto, profissional e ágil!" – Carlos, Queens</blockquote>
+</section>
+
+<section id="contact">
+  <h2>Fale Conosco</h2>
+  <div class="contact-form">
+    <form action="mailto:bigwaveelectric@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <h3>Localização</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.123456789!2d-80.123456789!3d26.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9abcd1234efgh%3A0x123456789abcdef!2sBig%20Wave%20Electric!5e0!3m2!1sen!2sus!4v1610000000000" allowfullscreen="" loading="lazy"></iframe>
-  </section>
+  </div>
 
-  <a href="https://wa.me/16316641808" class="whatsapp-button" target="_blank">💬</a>
+  <h3>Localização</h3>
+  <iframe src="https://www.google.com/maps?q=Long+Island,+NY,+USA&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<a class="whatsapp" href="https://wa.me/16316641808" target="_blank" title="Fale conosco no WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<footer>
+  <p>&copy; 2025 Big Wave Electric. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
